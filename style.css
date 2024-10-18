@@ -1,0 +1,88 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+img{
+    width: 50%;
+}
+.input-container{
+    margin-top: -35px;
+}
+input{
+    width: 500px;
+    padding: 15px;
+    border-radius: 50px;
+    border: 0;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+button{
+    padding: 15px;
+    border-radius: 50px;
+    border: 0;
+    background-color: rgb(75, 168, 249);
+    color: #fff;
+    font-weight: 700;
+}
+button:hover{
+    background-color: rgb(16, 153, 199);
+}
+h2{
+    margin-bottom: 0;
+    text-align: center;
+}
+#temperature{
+    margin-top: 10px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+#description{
+    margin-top: 8px;
+    text-align: center;
+}
+#error-message{
+    margin-top: 20px;
+    color: rgb(205, 10, 10);
+    font-size: 18px;
+}
+.hidden{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .input-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    input{
+        width: 300px;
+        margin-right: 5px;
+    }
+}
+
+@media screen and (max-width: 415px){
+    .input-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -15px;
+    }
+    input{
+        width: 190px;
+        margin-right: 5px;
+        padding: 8px;
+    }
+    img{
+        width: 30%;
+    }
+    button{
+        padding: 8px;
+    }
+}
